@@ -3,6 +3,8 @@ Public Repo with Gym environment for training Aida in simulation
 
 # Challenge
 
+See the goal of the challenge [here](https://docs.google.com/document/d/1XUVIDvSmAYZBO2ANfjU7D1XXT4yvY1EcyjS3YgeVnL8/edit?usp=sharing)
+
 ## Installing dependencies 
 
 ### ubuntu / linux
