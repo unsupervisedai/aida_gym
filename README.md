@@ -17,11 +17,13 @@ See the goal of the challenge [here](https://docs.google.com/document/d/1XUVIDvS
      pip install -e .
      
 
-### Mac OS 
+### Mac OS (To be tested)
  After installing XCode and Python3.5
 
      pip3 install --upgrade pip
      pip install jupyter gym pybullet
+     cd aida_gym
+     pip install -e .
 
 ## Run the notebook 
 
