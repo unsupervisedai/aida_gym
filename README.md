@@ -1,6 +1,6 @@
 # aida_gym
 Public Repo with Gym environment for training Aida in simulation
-[walk]('walk.gif')
+[walk]('https://raw.githubusercontent.com/unsupervisedai/aida_gym/master/walk.gif')
 
 # Challenge
 
