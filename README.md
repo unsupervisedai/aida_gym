@@ -1,6 +1,7 @@
 # aida_gym
 Public Repo with Gym environment for training Aida in simulation
-[walk]('https://raw.githubusercontent.com/unsupervisedai/aida_gym/master/walk.gif')
+
+![Alt text](walk.gif?raw=true "Aida Walking")
 
 # Challenge
 
