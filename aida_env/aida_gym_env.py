@@ -174,7 +174,12 @@ class AidaBulletEnv(gym.Env):
       self._pybullet_client.setPhysicsEngineParameter(
           numSolverIterations=int(self._num_bullet_solver_iterations))
       self._pybullet_client.setTimeStep(self._time_step)
-      self._pybullet_client.loadURDF("%s/plane.urdf" % self._urdf_root)
+      path = aida.getDataPath() + "/urdf/plane.urdf"
+      print(path)
+      print("%s/plane.urdf" % self._urdf_root)
+      self._pybullet_client.loadURDF(path)
+      #self._pybullet_client.loadURDF("%s/plane.urdf" % self._urdf_root)
+
       self._pybullet_client.setGravity(0, 0, -10)
       acc_motor = self._accurate_motor_model_enabled
       motor_protect = self._motor_overheat_protection
