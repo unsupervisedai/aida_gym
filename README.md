@@ -34,6 +34,7 @@ See the goal of the challenge [here](https://docs.google.com/document/d/1XUVIDvS
 Jupyter should open in your web browser and you can follow the instruction on how to get Started.
 
 Theotime COMBES
+Guillaume Thiry
      
 
 
