@@ -234,23 +234,23 @@ class Aida:
             self._pybullet_client.getBasePositionAndOrientation(self.quadruped))
         return position
 
-    def GetBaseLVelocity(self):
+    def GetBaseLinearVelocity(self):
         """Get the linear velocity of  aida's base.
         Returns:
           The linear (x,y,z) velocity of  aida's base.
         """
-        velocity, _ = (
+        linear_vel, _ = (
             self._pybullet_client.getBaseVelocity(self.quadruped))
-        return velocity
+        return linear_vel
 
-    def GetBaseAVelocity(self):
+    def GetBaseAngularVelocity(self):
         """Get the angular velocity of  aida's base.
         Returns:
-          The angular velocity of  aida's base.
+          The angular (x,y,z) velocity of  aida's base.
         """
-        _, velocity = (
+        _, angular_vel = (
             self._pybullet_client.getBaseVelocity(self.quadruped))
-        return velocity
+        return angular_vel
 
     def GetBaseOrientation(self):
         """Get the orientation of  aida's base, represented as quaternion.
