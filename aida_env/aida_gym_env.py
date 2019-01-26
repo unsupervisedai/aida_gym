@@ -36,8 +36,10 @@ class AidaBulletEnv(gym.Env):
       "render.modes": ["human", "rgb_array"],
       "video.frames_per_second": 50
   }
-
   def __init__(self,
+               commands,   ##(position) commands is an array of [x,y] position
+			   ##(velocity) commands is an array of [duration,[vx,vy,vz,ax,ay,az]]
+               commandtype="velocity",
                urdf_root=pybullet_data.getDataPath(),
                action_repeat=1,
                distance_weight=200,
@@ -45,6 +47,8 @@ class AidaBulletEnv(gym.Env):
                shake_weight=10,
                drift_weight=10,
                height_weight=100,
+               curve_weight=10,
+	       type_weight = 200,
                distance_limit=float("inf"),
                observation_noise_stdev=0.0,
                self_collision_enabled=True,
@@ -113,6 +117,8 @@ class AidaBulletEnv(gym.Env):
     self._drift_weight = drift_weight
     self._height_weight = height_weight
     self._shake_weight = shake_weight
+    self._curve_weight = curve_weight
+    self._type_weight = type_weight
     self._distance_limit = distance_limit
     self._observation_noise_stdev = observation_noise_stdev
     self._action_bound = 1
@@ -130,6 +136,9 @@ class AidaBulletEnv(gym.Env):
     self._hard_reset = True
     self._kd_for_pd_controllers = kd_for_pd_controllers
     self._last_frame_time = 0.0
+    self._commands = commands
+    self._commandtype = commandtype
+
     print("urdf_root=" + self._urdf_root)
     #self._env_randomizer = env_randomizer
     # PD control needs smaller time step for stability.
@@ -167,6 +176,9 @@ class AidaBulletEnv(gym.Env):
 
   def reset(self):
       self._reset()
+
+  def get_commands(self):
+      return self._commands
 
   def _reset(self):
     if self._hard_reset:
@@ -345,6 +357,15 @@ class AidaBulletEnv(gym.Env):
       height_reward = 1
     else:
       height_reward = 0
+    if self._commandtype =="velocity":
+        k=0
+        while self.get_commands()[k][0]<self._time_step :
+            k+=1
+        goal_velocity = self.get_commands()[k][1]
+	current_base_velocity = np.concatenate((self.aida.GetBaseLinearVelocity(),self.aida.GetBaseAngularVelocity()))
+        type_reward = - np.linalg.norm(goal_velocity - current_base_velocity)
+    elif self._commandtype =="position" :
+        type_reward= - min(np.linalg.norm(np.array(current_base_position)[0:2] - self.get_commands()[i]) for i in range (len(self.get_commands())))   ##To be optimised with Shapely
     self._last_base_position = current_base_position
     energy_reward = np.abs(
         np.dot(self.aida.GetMotorTorques(),
@@ -352,9 +373,11 @@ class AidaBulletEnv(gym.Env):
     reward = (
         self._distance_weight * forward_reward -
         self._energy_weight * energy_reward + self._drift_weight * drift_reward
-        + self._shake_weight * shake_reward + self._height_weight * height_reward)
+        + self._shake_weight * shake_reward + self._height_weight * height_reward
+        + self._type_weight * type_reward)
+
     self._objectives.append(
-        [forward_reward, energy_reward, drift_reward, shake_reward, height_reward])
+        [forward_reward, energy_reward, drift_reward, shake_reward, height_reward, type_reward])
     return reward
 
   def get_objectives(self):
