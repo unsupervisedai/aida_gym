@@ -1,0 +1,2290 @@
+<?xml version="0.0" ?>
+<robot name="terrain">
+  <link name="0">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-8 -8 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-8 -8 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="9">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-8 -6 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-8 -6 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="18">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-8 -4 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-8 -4 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="27">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-8 -2 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-8 -2 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="36">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-8 0 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-8 0 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="45">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-8 2 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-8 2 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="54">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-8 4 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-8 4 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="63">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-8 6 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-8 6 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="72">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-8 8 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-8 8 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="1">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-6 -8 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-6 -8 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="10">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-6 -6 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-6 -6 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="19">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-6 -4 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-6 -4 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="28">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-6 -2 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-6 -2 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="37">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-6 0 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-6 0 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="46">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-6 2 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-6 2 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="55">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-6 4 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-6 4 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="64">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-6 6 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-6 6 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="73">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-6 8 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-6 8 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="2">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-4 -8 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-4 -8 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="11">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-4 -6 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-4 -6 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="20">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-4 -4 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-4 -4 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="29">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-4 -2 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-4 -2 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="38">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-4 0 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-4 0 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="47">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-4 2 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-4 2 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="56">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-4 4 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-4 4 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="65">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-4 6 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-4 6 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="74">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-4 8 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-4 8 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="3">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-2 -8 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-2 -8 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="12">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-2 -6 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-2 -6 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="21">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-2 -4 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-2 -4 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="30">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-2 -2 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-2 -2 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="39">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-2 0 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-2 0 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="48">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-2 2 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-2 2 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="57">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-2 4 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-2 4 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="66">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-2 6 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-2 6 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="75">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="-2 8 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="-2 8 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="4">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 -8 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 -8 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="13">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 -6 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 -6 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="22">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 -4 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 -4 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="31">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 -2 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 -2 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="40">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="49">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 2 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 2 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="58">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 4 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 4 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="67">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 6 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 6 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="76">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 8 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 8 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="5">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="2 -8 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="2 -8 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="14">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="2 -6 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="2 -6 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="23">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="2 -4 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="2 -4 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="32">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="2 -2 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="2 -2 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="41">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="2 0 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="2 0 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="50">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="2 2 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="2 2 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="59">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="2 4 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="2 4 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="68">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="2 6 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="2 6 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="77">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="2 8 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="2 8 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="6">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="4 -8 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="4 -8 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="15">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="4 -6 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="4 -6 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="24">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="4 -4 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="4 -4 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="33">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="4 -2 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="4 -2 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="42">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="4 0 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="4 0 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="51">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="4 2 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="4 2 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="60">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="4 4 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="4 4 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="69">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="4 6 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="4 6 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="78">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="4 8 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="4 8 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="7">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="6 -8 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="6 -8 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="16">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="6 -6 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="6 -6 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="25">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="6 -4 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="6 -4 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="34">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="6 -2 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="6 -2 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="43">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="6 0 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="6 0 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="52">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="6 2 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="6 2 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="61">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="6 4 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="6 4 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="70">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="6 6 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="6 6 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="79">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="6 8 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="6 8 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="8">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="8 -8 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="8 -8 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="17">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="8 -6 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="8 -6 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="26">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="8 -4 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="8 -4 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="35">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="8 -2 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="8 -2 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="44">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="8 0 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="8 0 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="53">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="8 2 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="8 2 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="62">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="8 4 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="8 4 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="71">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="8 6 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="8 6 -0.02 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+  <link name="80">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="8 8 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="8 8 -0.0 "/>
+    <geometry>
+        <mesh filename="terrain1.obj" scale="1 1 1"/>
+    </geometry>
+    </collision>
+  </link>
+
+
+<joint name="9" type="fixed">
+    <parent link="0"/>
+    <child link="9"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="18" type="fixed">
+    <parent link="0"/>
+    <child link="18"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="27" type="fixed">
+    <parent link="0"/>
+    <child link="27"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="36" type="fixed">
+    <parent link="0"/>
+    <child link="36"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="45" type="fixed">
+    <parent link="0"/>
+    <child link="45"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="54" type="fixed">
+    <parent link="0"/>
+    <child link="54"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="63" type="fixed">
+    <parent link="0"/>
+    <child link="63"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="72" type="fixed">
+    <parent link="0"/>
+    <child link="72"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="1" type="fixed">
+    <parent link="0"/>
+    <child link="1"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="10" type="fixed">
+    <parent link="0"/>
+    <child link="10"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="19" type="fixed">
+    <parent link="0"/>
+    <child link="19"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="28" type="fixed">
+    <parent link="0"/>
+    <child link="28"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="37" type="fixed">
+    <parent link="0"/>
+    <child link="37"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="46" type="fixed">
+    <parent link="0"/>
+    <child link="46"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="55" type="fixed">
+    <parent link="0"/>
+    <child link="55"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="64" type="fixed">
+    <parent link="0"/>
+    <child link="64"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="73" type="fixed">
+    <parent link="0"/>
+    <child link="73"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="2" type="fixed">
+    <parent link="0"/>
+    <child link="2"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="11" type="fixed">
+    <parent link="0"/>
+    <child link="11"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="20" type="fixed">
+    <parent link="0"/>
+    <child link="20"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="29" type="fixed">
+    <parent link="0"/>
+    <child link="29"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="38" type="fixed">
+    <parent link="0"/>
+    <child link="38"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="47" type="fixed">
+    <parent link="0"/>
+    <child link="47"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="56" type="fixed">
+    <parent link="0"/>
+    <child link="56"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="65" type="fixed">
+    <parent link="0"/>
+    <child link="65"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="74" type="fixed">
+    <parent link="0"/>
+    <child link="74"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="3" type="fixed">
+    <parent link="0"/>
+    <child link="3"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="12" type="fixed">
+    <parent link="0"/>
+    <child link="12"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="21" type="fixed">
+    <parent link="0"/>
+    <child link="21"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="30" type="fixed">
+    <parent link="0"/>
+    <child link="30"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="39" type="fixed">
+    <parent link="0"/>
+    <child link="39"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="48" type="fixed">
+    <parent link="0"/>
+    <child link="48"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="57" type="fixed">
+    <parent link="0"/>
+    <child link="57"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="66" type="fixed">
+    <parent link="0"/>
+    <child link="66"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="75" type="fixed">
+    <parent link="0"/>
+    <child link="75"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="4" type="fixed">
+    <parent link="0"/>
+    <child link="4"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="13" type="fixed">
+    <parent link="0"/>
+    <child link="13"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="22" type="fixed">
+    <parent link="0"/>
+    <child link="22"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="31" type="fixed">
+    <parent link="0"/>
+    <child link="31"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="40" type="fixed">
+    <parent link="0"/>
+    <child link="40"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="49" type="fixed">
+    <parent link="0"/>
+    <child link="49"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="58" type="fixed">
+    <parent link="0"/>
+    <child link="58"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="67" type="fixed">
+    <parent link="0"/>
+    <child link="67"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="76" type="fixed">
+    <parent link="0"/>
+    <child link="76"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="5" type="fixed">
+    <parent link="0"/>
+    <child link="5"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="14" type="fixed">
+    <parent link="0"/>
+    <child link="14"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="23" type="fixed">
+    <parent link="0"/>
+    <child link="23"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="32" type="fixed">
+    <parent link="0"/>
+    <child link="32"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="41" type="fixed">
+    <parent link="0"/>
+    <child link="41"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="50" type="fixed">
+    <parent link="0"/>
+    <child link="50"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="59" type="fixed">
+    <parent link="0"/>
+    <child link="59"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="68" type="fixed">
+    <parent link="0"/>
+    <child link="68"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="77" type="fixed">
+    <parent link="0"/>
+    <child link="77"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="6" type="fixed">
+    <parent link="0"/>
+    <child link="6"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="15" type="fixed">
+    <parent link="0"/>
+    <child link="15"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="24" type="fixed">
+    <parent link="0"/>
+    <child link="24"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="33" type="fixed">
+    <parent link="0"/>
+    <child link="33"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="42" type="fixed">
+    <parent link="0"/>
+    <child link="42"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="51" type="fixed">
+    <parent link="0"/>
+    <child link="51"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="60" type="fixed">
+    <parent link="0"/>
+    <child link="60"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="69" type="fixed">
+    <parent link="0"/>
+    <child link="69"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="78" type="fixed">
+    <parent link="0"/>
+    <child link="78"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="7" type="fixed">
+    <parent link="0"/>
+    <child link="7"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="16" type="fixed">
+    <parent link="0"/>
+    <child link="16"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="25" type="fixed">
+    <parent link="0"/>
+    <child link="25"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="34" type="fixed">
+    <parent link="0"/>
+    <child link="34"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="43" type="fixed">
+    <parent link="0"/>
+    <child link="43"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="52" type="fixed">
+    <parent link="0"/>
+    <child link="52"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="61" type="fixed">
+    <parent link="0"/>
+    <child link="61"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="70" type="fixed">
+    <parent link="0"/>
+    <child link="70"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="79" type="fixed">
+    <parent link="0"/>
+    <child link="79"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="8" type="fixed">
+    <parent link="0"/>
+    <child link="8"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="17" type="fixed">
+    <parent link="0"/>
+    <child link="17"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="26" type="fixed">
+    <parent link="0"/>
+    <child link="26"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="35" type="fixed">
+    <parent link="0"/>
+    <child link="35"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="44" type="fixed">
+    <parent link="0"/>
+    <child link="44"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="53" type="fixed">
+    <parent link="0"/>
+    <child link="53"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="62" type="fixed">
+    <parent link="0"/>
+    <child link="62"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="71" type="fixed">
+    <parent link="0"/>
+    <child link="71"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+<joint name="80" type="fixed">
+    <parent link="0"/>
+    <child link="80"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+
+  <link name="bords">
+  <contact>
+    <lateral_friction value="1"/>
+  </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value=".0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+        <mesh filename="bords.obj" scale="1 1 1"/>
+    </geometry>
+    <material name="white">    <color rgba="1 1 1 1"/>    </material>    </visual>
+  </link>
+
+<joint name="bords" type="fixed">
+    <parent link="0"/>
+    <child link="bords"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+</joint>
+</robot>
