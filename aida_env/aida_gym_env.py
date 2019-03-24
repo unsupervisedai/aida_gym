@@ -40,6 +40,7 @@ class AidaBulletEnv(gym.Env):
                commands,   ##(position) commands is an array of [x,y] position
 			   ##(velocity) commands is an array of [duration,[vx,vy,vz,ax,ay,az]]
                commandtype="velocity",
+	       area = "plane",
                urdf_root=pybullet_data.getDataPath(),
                action_repeat=1,
                distance_weight=200,
@@ -138,6 +139,7 @@ class AidaBulletEnv(gym.Env):
     self._last_frame_time = 0.0
     self._commands = commands
     self._commandtype = commandtype
+    self._area = area
 
     print("urdf_root=" + self._urdf_root)
     #self._env_randomizer = env_randomizer
@@ -186,9 +188,9 @@ class AidaBulletEnv(gym.Env):
       self._pybullet_client.setPhysicsEngineParameter(
           numSolverIterations=int(self._num_bullet_solver_iterations))
       self._pybullet_client.setTimeStep(self._time_step)
-      path = aida.getDataPath() + "/urdf/plane.urdf"
+      path = aida.getDataPath() + "/urdf/" + self._area +".urdf"
       print(path)
-      print("%s/plane.urdf" % self._urdf_root)
+      print("%s/" % self._urdf_root + self._area +".urdf" )
       self._pybullet_client.loadURDF(path)
       #self._pybullet_client.loadURDF("%s/plane.urdf" % self._urdf_root)
 
