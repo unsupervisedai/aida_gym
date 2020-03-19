@@ -38,18 +38,17 @@ class AidaBulletEnv(gym.Env):
   }
   def __init__(self,
                commands,   ##(position) commands is an array of [x,y] position
-			   ##(velocity) commands is an array of [duration,[vx,vy,vz,ax,ay,az]]
-               commandtype="velocity",
-	       area = "plane",
+               ##(velocity) commands is an array of [duration,[vx,vy,vz,ax,ay,az]]
+               commandtype="position",
+               area = "plane",
                urdf_root=pybullet_data.getDataPath(),
                action_repeat=1,
-               distance_weight=200,
-               energy_weight=0.5,
-               shake_weight=10,
-               drift_weight=10,
                height_weight=100,
-               curve_weight=10,
-	       type_weight = 200,
+               default_reward = 1.0,
+               orientation_weight = 1.0,
+               direction_weight = 1.0,
+               speed_weight = 1.0,
+               type_weight = 10,
                distance_limit=float("inf"),
                observation_noise_stdev=0.0,
                self_collision_enabled=True,
@@ -113,12 +112,7 @@ class AidaBulletEnv(gym.Env):
     self._env_step_counter = 0
     self._is_render = render
     self._last_base_position = [0, 0, 0]
-    self._distance_weight = distance_weight
-    self._energy_weight = energy_weight
-    self._drift_weight = drift_weight
     self._height_weight = height_weight
-    self._shake_weight = shake_weight
-    self._curve_weight = curve_weight
     self._type_weight = type_weight
     self._distance_limit = distance_limit
     self._observation_noise_stdev = observation_noise_stdev
@@ -140,6 +134,12 @@ class AidaBulletEnv(gym.Env):
     self._commands = commands
     self._commandtype = commandtype
     self._area = area
+    self._default_reward = default_reward
+    self._currentObjective = 0
+    self._orientation_weight = orientation_weight
+    self._direction_weight = direction_weight
+    self._direction_weight = direction_weight
+    self._speed_weight = speed_weight
 
     print("urdf_root=" + self._urdf_root)
     #self._env_randomizer = env_randomizer
@@ -159,8 +159,10 @@ class AidaBulletEnv(gym.Env):
     self.reset()
     observation_high = (
         self.aida.GetObservationUpperBound() + OBSERVATION_EPS)
+    observation_high = np.concatenate((observation_high,np.array([100,100])),axis=None)
     observation_low = (
         self.aida.GetObservationLowerBound() - OBSERVATION_EPS)
+    observation_low = np.concatenate((observation_low,np.array([-100,-100])),axis=None)
     action_dim = NUM_MOTORS
     action_high = np.array([self._action_bound] * action_dim)
     self.action_space = spaces.Box(-action_high, action_high)
@@ -177,7 +179,7 @@ class AidaBulletEnv(gym.Env):
     self._args = args
 
   def reset(self):
-      self._reset()
+      return self._reset()
 
   def get_commands(self):
       return self._commands
@@ -225,7 +227,8 @@ class AidaBulletEnv(gym.Env):
         if self._pd_control_enabled or self._accurate_motor_model_enabled:
           self.aida.ApplyAction(-0.5 * np.ones(12))
         self._pybullet_client.stepSimulation()
-    return self._noisy_observation()
+    ret = self._noisy_observation()
+    return ret
 
   def _seed(self, seed=None):
     self.np_random, seed = seeding.np_random(seed)
@@ -352,35 +355,30 @@ class AidaBulletEnv(gym.Env):
 
   def _reward(self):
     current_base_position = self.aida.GetBasePosition()
-    forward_reward = current_base_position[0] - self._last_base_position[0]
-    drift_reward = -abs(current_base_position[1] - self._last_base_position[1])
-    shake_reward = -abs(current_base_position[2] - self._last_base_position[2])
-    if current_base_position[2] > 0.9:
-      height_reward = 1
-    else:
-      height_reward = 0
-    if self._commandtype =="velocity":
-        k=0
-        while self.get_commands()[k][0]<self._time_step :
-            k+=1
-        goal_velocity = self.get_commands()[k][1]
-	current_base_velocity = np.concatenate((self.aida.GetBaseLinearVelocity(),self.aida.GetBaseAngularVelocity()))
-        type_reward = - np.linalg.norm(goal_velocity - current_base_velocity)
-    elif self._commandtype =="position" :
-        type_reward= - min(np.linalg.norm(np.array(current_base_position)[0:2] - self.get_commands()[i]) for i in range (len(self.get_commands())))   ##To be optimised with Shapely
-    self._last_base_position = current_base_position
-    energy_reward = np.abs(
-        np.dot(self.aida.GetMotorTorques(),
-               self.aida.GetMotorVelocities())) * self._time_step
-    reward = (
-        self._distance_weight * forward_reward -
-        self._energy_weight * energy_reward + self._drift_weight * drift_reward
-        + self._shake_weight * shake_reward + self._height_weight * height_reward
-        + self._type_weight * type_reward)
+    distToTarget = np.array(list(current_base_position[0:2])) - np.array(self._commands[self._currentObjective])
+    if(np.linalg.norm(distToTarget) < 0.4):
+        self._currentObjective = (self._currentObjective+1)%len(self._commands)
+        if(self._is_render):
+            self.drawTarget(self.aida._targetPoint)
 
-    self._objectives.append(
-        [forward_reward, energy_reward, drift_reward, shake_reward, height_reward, type_reward])
-    return reward
+
+    height_reward = (0.6-current_base_position[2])**2
+    
+    orientation = self.aida.GetBaseOrientation()
+    rot_mat = self._pybullet_client.getMatrixFromQuaternion(orientation)
+    local_up = rot_mat[6:]
+    orientation_reward = (np.dot(np.asarray([0, 0, 1]), np.asarray(local_up))-0.85)/0.15
+    
+    dirTo = distToTarget 
+    dirTo /= np.linalg.norm(dirTo)
+    actualDir = rot_mat[:2]
+    actualDir /= np.linalg.norm(actualDir)
+    direction_reward = np.dot(actualDir, dirTo)
+	
+    speed_reward = np.dot(self.aida.GetBaseLinearVelocity()[0:2],dirTo)
+
+    return self._default_reward - self._height_weight*height_reward + self._orientation_weight*orientation_reward + self._direction_weight*direction_reward + self._speed_weight*speed_reward
+
 
   def get_objectives(self):
     return self._objectives
@@ -391,9 +389,12 @@ class AidaBulletEnv(gym.Env):
 
   def _noisy_observation(self):
     self._get_observation()
-    observation = np.array(self._observation)
+    observation = self._observation
+    observation.extend(list(self._commands[self._currentObjective]))
+    observation = np.array(observation)
     if self._observation_noise_stdev > 0:
       observation += (np.random.normal(
           scale=self._observation_noise_stdev, size=observation.shape) *
                       self.aida.GetObservationUpperBound())
+
     return observation

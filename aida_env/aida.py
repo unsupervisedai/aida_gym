@@ -307,6 +307,7 @@ class Aida:
         observation.extend(self.GetMotorVelocities().tolist())
         observation.extend(self.GetMotorTorques().tolist())
         observation.extend(list(self.GetBaseOrientation()))
+        observation.extend(list(self.GetBasePosition()))
         return observation
 
 
