@@ -15,6 +15,7 @@ if __name__ == '__main__':
 
 	workDirectory = "."
 	
+	print("okok")
 
 	parser = argparse.ArgumentParser(description='Aida traning script')
 
