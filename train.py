@@ -1,6 +1,8 @@
 import gym
 import numpy as np
 
+print("data")
+
 from stable_baselines.common.policies import MlpPolicy
 from stable_baselines.common.vec_env import DummyVecEnv, SubprocVecEnv, VecNormalize
 from stable_baselines import PPO2
