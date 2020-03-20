@@ -15,7 +15,7 @@ import os
 
 if __name__ == '__main__':
 
-	workDirectory = ".."
+	workDirectory = "."
 	
 
 	parser = argparse.ArgumentParser(description='Aida traning script')
